@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js好难啊！！！</title>
+    <script>alert("我只是一个大写和字符串罢了")</script>
+</head>
+<body>
+    <script>
+      var str="hello world";
+	var arr=str.split(" ");
+	console.log(arr)
+    var b=new Array(i);
+	for (var i=0;i<arr.length;i++){
+    b[i]=arr[i][0].toUpperCase()+arr[i].substring(1);
+    }
+    str=b.join(" ");
+    console.log(str)
+    document.write(str);
+    </script>
+    <script>
+       var examplearr=[8,94,15,88,55,76,21,39];
+ 
+ function sortArr(orginArr) {
+     var arr = orginArr.concat();
+
+     var len = arr.length;
+     for(var i = 0; i < len; ++i) {
+         for(var j =0; j < len -1 - i;++j) {
+             if(arr[j]>arr[j+1]) {
+                 var temp = arr[j];
+                 arr[j] = arr[j+1];
+                 arr[j+1] = temp
+             }
+         }
+     }
+     return arr;
+ }
+
+ console.log(sortArr(examplearr))
+ document.write(sortArr(examplearr));
+    </script>
+</body>
+</html>
